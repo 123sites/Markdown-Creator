@@ -1,0 +1,24 @@
+{
+  "name": "markdown-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123sites/Markdown-Creator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123sites/Markdown-Creator/issues"
+  },
+  "homepage": "https://github.com/123sites/Markdown-Creator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
