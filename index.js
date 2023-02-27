@@ -10,7 +10,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 // DO I NEED THE BELOW TO LINK TO EMAIL ME?????
 // https://www.w3schools.com/nodejs/nodejs_email.asp
 // URL MODULE???? https://www.w3schools.com/nodejs/ref_url.asp
-var nodemailer = require('nodemailer');
+// var nodemailer = require('nodemailer');
 // links it to the badges:
 // const licenseBadge = require("./utils/licenseBadge").licenseBadge;
 // NEEDED OR NOT?
