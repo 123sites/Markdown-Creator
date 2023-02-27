@@ -1,7 +1,8 @@
 // External package:
 // fs is a Node standard library package for reading and writing files
 const fs = require('fs');
-
+// NEED THE BELOW???
+const util = require('util');
 // Internal modules:
 const generateMarkdown = require("./utils/generateMarkdown")
 // ADD A FILE WITHIN THE UTILS FOLDER??????
@@ -11,7 +12,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 // URL MODULE???? https://www.w3schools.com/nodejs/ref_url.asp
 var nodemailer = require('nodemailer');
 // links it to the badges:
-const licenseBadge = require("./utils/licenseBadge").licenseBadge;
+// const licenseBadge = require("./utils/licenseBadge").licenseBadge;
 // NEEDED OR NOT?
 //Allows for use of async await
 // const writeFileAsync = util.promisify(fs.writeFile);
@@ -62,7 +63,7 @@ const questions = [
 {
   type: 'list',
   message: 'What is the license for your project?',
-  choices: ['MIT', 'Apache License 2.0', 'GNU v3.0' ],
+  choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Apache License 2.0', 'Unlicense',],
   name: 'license',
 },
 {
