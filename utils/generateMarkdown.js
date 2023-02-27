@@ -1,79 +1,85 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {if (value === "") {
-  return "[![License: MIT](https://img.123sites.io/badge/License)](https://www.gnu.org/licenses/agpl-3.0)";
-}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {function generateLicenseUrl(license) {
-  let badge;
-  
-  switch (license) {
-    case "GNU AGPLv3":
-      path = "agpl-3.0";
-      break;
-    case "GNU GPLv3":
-      path = "gpl-3.0";
-      break;
-    case "GNU LGPLv3":
-      path = "lgpl-3.0";
-      break;
-    case "Apache License 2.0":
-      path = "apache-2.0";
-      break;
-    case "MIT License":
-      path = "mit";
-      break;
-    case "The Unlicense":
-      path = "unlicense";
-      break;
+function renderLicenseBadge(license) {
+  if (value === "") {
+    return "[![License: MIT](https://img.123sites.io/badge/License)](https://www.gnu.org/licenses/agpl-3.0)";
   }
-}
-  return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
 
+  // TODO: Create a function that returns the license link
+  // If there is no license, return an empty string
+  function renderLicenseLink(license) {
+    function generateLicenseUrl(license) {
+      let badge;
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-function renderLicenseSection(license) {function generateLicenseUrl(license) {
-  let path;
-  
-  switch (license) {
-    case "GNU AGPLv3":
-      path = "agpl-3.0";
-      break;
-    case "GNU GPLv3":
-      path = "gpl-3.0";
-      break;
-    case "GNU LGPLv3":
-      path = "lgpl-3.0";
-      break;
-    case "Apache License 2.0":
-      path = "apache-2.0";
-      break;
-    case "MIT License":
-      path = "mit";
-      break;
-    case "The Unlicense":
-      path = "unlicense";
-      break;
-  }
-}
+      switch (license) {
+        case "GNU AGPLv3":
+          path = "agpl-3.0";
+          break;
+        case "GNU GPLv3":
+          path = "gpl-3.0";
+          break;
+        case "GNU LGPLv3":
+          path = "lgpl-3.0";
+          break;
+        case "Apache License 2.0":
+          path = "apache-2.0";
+          break;
+        case "MIT License":
+          path = "mit";
+          break;
+        case "The Unlicense":
+          path = "unlicense";
+          break;
+      }
+    }
+    return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  
-# ${data.title}
+    // // TODO: Create a function that returns the license section of README
+    // // If there is no license, return an empty string
+    function renderLicenseSection(license) {
+      function generateLicenseUrl(license) {
+        let path;
+
+        switch (license) {
+          case "GNU AGPLv3":
+            path = "agpl-3.0";
+            break;
+          case "GNU GPLv3":
+            path = "gpl-3.0";
+            break;
+          case "GNU LGPLv3":
+            path = "lgpl-3.0";
+            break;
+          case "Apache License 2.0":
+            path = "apache-2.0";
+            break;
+          case "MIT License":
+            path = "mit";
+            break;
+          case "The Unlicense":
+            path = "unlicense";
+            break;
+        }
+      }
+
+      // TODO: Create a function to generate markdown for README
+      function generateMarkdown(data) {
+        return `
+
+<style>
+violet { color: violet }
+</style>
+
+<violet> # ${data.title} </violet>
 
 ![License Badge](https://img.shields.io/github/license/${data.github}/${data.repo})
 // ![Badges Link](https://github.com/123sites?tab=achievements)
 
-## Description
+<violet>## Description</violet>
 
 ${data.describe}
 
-## Table of Contents
+<violet>## Table of Contents</violet>
 ${data.contents}
 
 1. [Installation](#installation),
@@ -83,46 +89,48 @@ ${data.contents}
 5. [Questions](#questions)
 6. [License](#license)
 
-## Installation
+<violet>## Installation</violet>
 
 ${data.installation}
 
-## Usage
+<violet>## Usage</violet>
 
 ${data.usage}
 
-## License
+<violet>## License</violet>
 
 ${data.license}
 
-## Contributions
+<violet>## Contributions</violet>
 
 ${data.contributions}
 
-## Tests
+<violet>## Tests</violet>
 
 ${data.tests}
 
-## Questions
+<violet>## Questions</violet>
 
 * Checkout my [GitHub profile](https://github.com/${data.github})
 https://github.com/123sites?tab=repositories
   
 * Any additional questions or feed back, feel free to [send an email](mailto:${data.email}). 
 
-## License
+<violet>## License</violet>
 
 Copyright (c) [${data.github}](https://github.com/${data.github}). All rights reserved.
 
 Licensed under the ${data.license} license.
 
-## Badges
+<violet>## Badges</violet>
 
 
-## Features
+<violet>## Features</violet>
 
 `;
-}
+      }
 
-module.exports = generateMarkdown;
-}}}
+      module.exports = generateMarkdown;
+    }
+  }
+}
