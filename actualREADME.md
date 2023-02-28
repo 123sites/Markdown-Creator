@@ -7,8 +7,8 @@ This is a command-line application that helps a project creator to create a high
 ## Installation 🔑
 
 1. Download or clone the repository,
-3. Node.js is required to run this application,
-3. npm install to add the needed npm packages
+2. 	![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) is required to run this application,
+3. 	![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) to add the needed npm packages
 
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Markdown-Creator.git)
@@ -18,20 +18,20 @@ The link to the Markdown-Creator is at:
 
 ## Usage
 
-* This application will be prompted through using the command node index.js.
-* The user is then asked questions for the README.
-* After they answer all the questions, the below sections are generated:
-  1. Description
-  2. Table of Contents
+1. This application will be prompted through using the command node index.js.
+2. The user is then asked questions for the README.
+3. After they answer all the questions, the below sections are generated:
+   * Description
+   * Table of Contents
      - With clickable links to the corresponding sections
-  3. Installation
-  4. Usage
-  5. Contributing
-  6. Tests
-  7. Questions
+   * Installation
+   * Usage
+   * Contributing
+   * Tests
+   * Questions
      - Link to to GitHub profile is added
      - Instructions regarding how to reach out by email, with additional questions
-  8. License
+   * License
 
 ## Video Demonstration 🎯
 
@@ -52,7 +52,7 @@ The MIT license is in the GitHub repository.
 
 ## Badges 🏆
 
-So far, I have the Pull Shark and Yolo badges on GitHub.
+So far, I have the ```Pull Shark``` and ```Yolo``` badges on GitHub.
 [Badges, Stars tab](https://github.com/123sites?tab=stars)
 
 ## Features ✍

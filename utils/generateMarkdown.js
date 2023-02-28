@@ -33,22 +33,22 @@ function renderLicenseLink(license) {
     let badge;
     switch (license) {
       case "MIT":
-        path = "mit";
+        path = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
         break;
       case "Apache":
-        path = "apache-2.0";
+        path = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
         break;
       case "GNUag3":
-        path = "gpl-3.0";
+        path = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
         break;
-      case "GNUgp":
-        path = "gpl-3.0";
+      case "GNUgp3":
+        path = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
         break;
-      case "GNUlg":
-        path = "lgpl-3.0";
+      case "GNUlg3":
+        path = "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)";
         break;
       case "Unlicense":
-        path = "unlicense";
+        path = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
         break;  
     }
   }
@@ -86,9 +86,6 @@ function renderLicenseLink(license) {
       // TODO: Create a function to generate markdown for README
       function generateMarkdown(data) {
         return `
-@# text in violet text-size: 30px@
-@## text in violet text-size: 20px@
-
 # ${data.title}
 
 ## Description

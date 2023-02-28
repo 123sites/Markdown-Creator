@@ -87,7 +87,7 @@ const questions = [
 {
   type: 'list',
   message: 'What is the license for your project?',
-  choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Apache License 2.0', 'Unlicense',],
+  choices: ['MIT', 'GNU AGPL v3', 'GNU GPL v3', 'GNU LGPL v3', 'Apache License 2.0', 'Unlicense',],
   name: 'license',
 },
 {
