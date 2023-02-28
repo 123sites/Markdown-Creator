@@ -6,6 +6,27 @@ function renderLicenseBadge(license) {
   this.color = color;
 }
 
+function renderLicenseLink(license) {
+  const link = Brand (apache, mit, GNU )
+  this.type = type;
+  this.color = color;
+}
+
+  function generateLicenseUrl(license) {
+    let badge;
+    switch (license) {
+      case "Apache":
+        path = "apache-2.0";
+        break;
+      case "MIT":
+        path = "mit";
+        break;
+      case "GNU":
+        path = "gpl-3.0";
+        break;
+    }
+  }
+
   // if (value === "") {
   //   if (license === 'Apache') {
   //     return `![${license}: Apache](https://img.shields.io/badge/License-${license}-blue.svg)`;
@@ -132,7 +153,7 @@ Licensed under the ${data.license} license.
 `;
       }
 
-      module.exports = generateMarkdown;
+module.exports = generateMarkdown;
 //     }
 //   }
 // }

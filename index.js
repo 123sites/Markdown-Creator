@@ -1,3 +1,27 @@
+// TODO: High-quality, professional README.md is generated with the title of my project 
+// SECTIONS: entitled Description, Table of Contents, Installation, Usage, License, 
+// Contributing, Tests, and Questions
+
+// TITLE:
+// THEN: Enter a description, installation instructions, usage information, contribution
+// guidelines, and test instructions sections of the
+// README ENTITLED: Description, Installation, Usage, Contributing, and Tests
+
+// CHOOSE A LICENSE VIA OPTIONS LIST:
+// A badge for that license is added near the top of the README and a notice is added to the 
+// section of the README entitled License that explains which license the application is 
+// covered under
+
+// GITHUB USERNAME: This is added to the section of the README entitled Questions, with a
+// link to my GitHub profile
+
+// EMAIL ADDRESS: This is added to the section of the README entitled Questions, with
+// instructions on HOW TO REACH ME with additional questions
+
+// CLICK THE LINKS TO: The Table of Contents THEN I am taken to the corresponding section 
+// of the README
+// ////////////////////////////////////////////////////////////////////////////////////////////
+ 
 // External package:
 // fs is a Node standard library package for reading and writing files
 const fs = require('fs');
@@ -7,15 +31,19 @@ const util = require('util');
 const generateMarkdown = require("./utils/generateMarkdown")
 // ADD A FILE WITHIN THE UTILS FOLDER??????
 // const api = require('')
+
 // DO I NEED THE BELOW TO LINK TO EMAIL ME?????
+// var nodemailer = require('nodemailer');
 // https://www.w3schools.com/nodejs/nodejs_email.asp
 // URL MODULE???? https://www.w3schools.com/nodejs/ref_url.asp
-// var nodemailer = require('nodemailer');
+
 // links it to the badges:
 // const licenseBadge = require("./utils/licenseBadge").licenseBadge;
+
 // NEEDED OR NOT?
 //Allows for use of async await
 // const writeFileAsync = util.promisify(fs.writeFile);
+// promise is later, with OOP
 
 // External package:
 // TODO: Include packages needed for this application
