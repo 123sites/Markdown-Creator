@@ -60,11 +60,6 @@ const questions = [
 },
 {
   type: 'input',
-  message: 'What is the name of your repository?',
-  name: 'repo',
-},
-{
-  type: 'input',
   message: 'What is the title of your project?',
   name: 'title',
 },
@@ -73,11 +68,12 @@ const questions = [
   message: 'How would you describe your project?',
   name: 'describe',
 },
-{
-  type: 'list',
-  message: '?',
-  name: 'contents',
-},
+// TABLE OF CONTENTS GOES HERE
+// {
+//   type: 'list',
+//   message: '?',
+//   name: 'contents',
+// },
 {
   type: 'input',
   message: 'What are the instructions for installation?',
@@ -91,24 +87,24 @@ const questions = [
 {
   type: 'list',
   message: 'What is the license for your project?',
-  choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Apache License 2.0', 'Unlicense',],
+  choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Apache License 2.0', 'Unlicense',],
   name: 'license',
 },
 {
   type: 'input',
-  message: 'Name all the collaborators for this project.',
-  name: 'collaborators',
+  message: 'What are the contribution guidelines? (If none, type "none")',
+  name: 'contributions',
 },
-// {
-//   type: 'input',
-//   message: '',
-//   name: 'features',
-// },
-// {
-//   type: 'input',
-//   message: 'What are the test instructions?',
-//   name: 'tests',
-// },
+{
+  type: 'input',
+  message: '',
+  name: 'features',
+},
+{
+  type: 'input',
+  message: 'What are the test instructions?',
+  name: 'tests',
+},
 {
   type: 'input',
   message: 'What is your email address?',
