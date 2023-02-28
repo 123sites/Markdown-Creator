@@ -71,16 +71,16 @@ const questions = [
   message: 'Name all the collaborators for this project.',
   name: 'collaborators',
 },
-{
-  type: 'input',
-  message: '',
-  name: 'features',
-},
-{
-  type: 'input',
-  message: 'What are the test instructions?',
-  name: 'test',
-},
+// {
+//   type: 'input',
+//   message: '',
+//   name: 'features',
+// },
+// {
+//   type: 'input',
+//   message: 'What are the test instructions?',
+//   name: 'tests',
+// },
 {
   type: 'input',
   message: 'What is your email address?',

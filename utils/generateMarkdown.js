@@ -1,6 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  const badge = Brand (apache, mit, )
+  this.type = type;
+  this.color = color;
+}
+
   // if (value === "") {
   //   if (license === 'Apache') {
   //     return `![${license}: Apache](https://img.shields.io/badge/License-${license}-blue.svg)`;
@@ -9,7 +14,7 @@ function renderLicenseBadge(license) {
   //   //   return `[![${license}: GNU](https://img.shields.io/badge/License-${license})](https://www.gnu.org/licenses/agpl-3.0)`;
   //   // }
   // }}
-}
+// }
   // TODO: Create a function that returns the license link
   // If there is no license, return an empty string
   // function renderLicenseLink(license) {
@@ -77,7 +82,7 @@ violet { color: violet }
 
 <violet> # ${data.title} </violet>
 
-<violet>## Description</violet>
+## Description
 
 ${data.describe}
 
