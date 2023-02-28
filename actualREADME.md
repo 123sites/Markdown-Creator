@@ -2,11 +2,7 @@
 
 ## Description ✏️
 
-- Acceptance Criteria
-
-DO THIS PART!!!!!!!!!!!!!!!!
-
-
+This is a command-line application that helps a project creator to create a high-quality, professional README that is dynamically generated from the user's input.  
 
 ## Installation 🔑
 
@@ -14,12 +10,28 @@ DO THIS PART!!!!!!!!!!!!!!!!
 3. Node.js is required to run this application,
 3. npm install to add the needed npm packages
 
-
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Markdown-Creator.git)
 
 The link to the Markdown-Creator is at:
-[Weather-Outlook-For-Travel Link](https://123sites.github.io/Markdown-Creator/)
+[Markdown-Creator Link](https://123sites.github.io/Markdown-Creator/)
+
+## Usage
+
+* This application will be prompted through using the command node index.js.
+* The user is then asked questions for the README.
+* After they answer all the questions, the below sections are generated:
+  1. Description
+  2. Table of Contents
+     - With clickable links to the corresponding sections
+  3. Installation
+  4. Usage
+  5. Contributing
+  6. Tests
+  7. Questions
+     - Link to to GitHub profile is added
+     - Instructions regarding how to reach out by email, with additional questions
+  8. License
 
 ## Video Demonstration 🎯
 
