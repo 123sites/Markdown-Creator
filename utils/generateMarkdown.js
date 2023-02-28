@@ -1,66 +1,71 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (value === "") {
-    return "[![License: MIT](https://img.123sites.io/badge/License)](https://www.gnu.org/licenses/agpl-3.0)";
-  }
-
+  // if (value === "") {
+  //   if (license === 'Apache') {
+  //     return `![${license}: Apache](https://img.shields.io/badge/License-${license}-blue.svg)`;
+  // // ![alt text](image.jpg)
+  //   // if (license === 'GNU') {
+  //   //   return `[![${license}: GNU](https://img.shields.io/badge/License-${license})](https://www.gnu.org/licenses/agpl-3.0)`;
+  //   // }
+  // }}
+}
   // TODO: Create a function that returns the license link
   // If there is no license, return an empty string
-  function renderLicenseLink(license) {
-    function generateLicenseUrl(license) {
-      let badge;
+  // function renderLicenseLink(license) {
+  //   function generateLicenseUrl(license) {
+  //     let badge;
 
-      switch (license) {
-        case "GNU AGPLv3":
-          path = "agpl-3.0";
-          break;
-        case "GNU GPLv3":
-          path = "gpl-3.0";
-          break;
-        case "GNU LGPLv3":
-          path = "lgpl-3.0";
-          break;
-        case "Apache License 2.0":
-          path = "apache-2.0";
-          break;
-        case "MIT License":
-          path = "mit";
-          break;
-        case "The Unlicense":
-          path = "unlicense";
-          break;
-      }
-    }
-    return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
+  //     switch (license) {
+  //       case "GNU AGPLv3":
+  //         path = "agpl-3.0";
+  //         break;
+  //       case "GNU GPLv3":
+  //         path = "gpl-3.0";
+  //         break;
+  //       case "GNU LGPLv3":
+  //         path = "lgpl-3.0";
+  //         break;
+  //       case "Apache License 2.0":
+  //         path = "apache-2.0";
+  //         break;
+  //       case "MIT License":
+  //         path = "mit";
+  //         break;
+  //       case "The Unlicense":
+  //         path = "unlicense";
+  //         break;
+  //     }
+  //   }
+  //   return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
 
-    // // TODO: Create a function that returns the license section of README
-    // // If there is no license, return an empty string
-    function renderLicenseSection(license) {
-      function generateLicenseUrl(license) {
-        let path;
+  //   // // TODO: Create a function that returns the license section of README
+  //   // // If there is no license, return an empty string
+  //   function renderLicenseSection(license) {
+  //     function generateLicenseUrl(license) {
+  //       let path;
 
-        switch (license) {
-          case "GNU AGPLv3":
-            path = "agpl-3.0";
-            break;
-          case "GNU GPLv3":
-            path = "gpl-3.0";
-            break;
-          case "GNU LGPLv3":
-            path = "lgpl-3.0";
-            break;
-          case "Apache License 2.0":
-            path = "apache-2.0";
-            break;
-          case "MIT License":
-            path = "mit";
-            break;
-          case "The Unlicense":
-            path = "unlicense";
-            break;
-        }
-      }
+  //       switch (license) {
+  //         case "GNU AGPLv3":
+  //           path = "agpl-3.0";
+  //           break;
+  //         case "GNU GPLv3":
+  //           path = "gpl-3.0";
+  //           break;
+  //         case "GNU LGPLv3":
+  //           path = "lgpl-3.0";
+  //           break;
+  //         case "Apache License 2.0":
+  //           path = "apache-2.0";
+  //           break;
+  //         case "MIT License":
+  //           path = "mit";
+  //           break;
+  //         case "The Unlicense":
+  //           path = "unlicense";
+  //           break;
+  //       }
+  //     }
 
       // TODO: Create a function to generate markdown for README
       function generateMarkdown(data) {
@@ -72,9 +77,6 @@ violet { color: violet }
 
 <violet> # ${data.title} </violet>
 
-![License Badge](https://img.shields.io/github/license/${data.github}/${data.repo})
-// ![Badges Link](https://github.com/123sites?tab=achievements)
-
 <violet>## Description</violet>
 
 ${data.describe}
@@ -82,8 +84,8 @@ ${data.describe}
 <violet>## Table of Contents</violet>
 ${data.contents}
 
-1. [Installation](#installation),
-2. [Usage](#usage),
+1. [Installation](#installation)
+2. [Usage](#usage)
 3. [Contribution](#contribution)
 4. [Tests](#tests)
 5. [Questions](#questions)
@@ -101,9 +103,9 @@ ${data.usage}
 
 ${data.license}
 
-<violet>## Contributions</violet>
+<violet>## Collaborators</violet>
 
-${data.contributions}
+${data.collaborators}
 
 <violet>## Tests</violet>
 
@@ -122,15 +124,12 @@ Copyright (c) [${data.github}](https://github.com/${data.github}). All rights re
 
 Licensed under the ${data.license} license.
 
-<violet>## Badges</violet>
-
-
-<violet>## Features</violet>
-
 `;
       }
 
       module.exports = generateMarkdown;
-    }
-  }
-}
+//     }
+//   }
+// }
+
+// ![License Badge](https://img.shields.io/github/license/${data.github}/${data.repo})

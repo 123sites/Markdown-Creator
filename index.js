@@ -69,17 +69,7 @@ const questions = [
 {
   type: 'input',
   message: 'Name all the collaborators for this project.',
-  name: 'credits',
-},
-{
-  type: 'input',
-  message: '',
-  name: 'license',
-},
-{
-  type: 'input',
-  message: '',
-  name: 'badges',
+  name: 'collaborators',
 },
 {
   type: 'input',
