@@ -25,25 +25,12 @@
 // External package:
 // fs is a Node standard library package for reading and writing files
 const fs = require('fs');
-// NEED THE BELOW???
-const util = require('util');
+
 // Internal modules:
 const generateMarkdown = require("./utils/generateMarkdown")
-// ADD A FILE WITHIN THE UTILS FOLDER??????
-// const api = require('')
-
-// DO I NEED THE BELOW TO LINK TO EMAIL ME?????
-// var nodemailer = require('nodemailer');
-// https://www.w3schools.com/nodejs/nodejs_email.asp
-// URL MODULE???? https://www.w3schools.com/nodejs/ref_url.asp
 
 // links it to the badges:
 // const licenseBadge = require("./utils/licenseBadge").licenseBadge;
-
-// NEEDED OR NOT?
-//Allows for use of async await
-// const writeFileAsync = util.promisify(fs.writeFile);
-// promise is later, with OOP
 
 // External package:
 // TODO: Include packages needed for this application
@@ -68,12 +55,6 @@ const questions = [
   message: 'How would you describe your project?',
   name: 'describe',
 },
-// TABLE OF CONTENTS GOES HERE
-// {
-//   type: 'list',
-//   message: '?',
-//   name: 'contents',
-// },
 {
   type: 'input',
   message: 'What are the instructions for installation?',
@@ -93,7 +74,7 @@ const questions = [
 {
   type: 'input',
   message: 'What are the contribution guidelines? (If none, type "none")',
-  name: 'contributions',
+  name: 'contributing',
 },
 {
   type: 'input',
@@ -126,7 +107,7 @@ function init() {inquirer
   .then((answers) =>{
   console.log(answers);
   const markdown = generateMarkdown(answers);
-  createFile("README.md", markdown)
+  createFile("./app/README.md", markdown)
   }
   );
 }
