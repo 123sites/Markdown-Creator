@@ -18,9 +18,6 @@
       case "GNUgp3":
         return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
         break;
-      case "GNUlg3":
-        return `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
-        break;
       case "Unlicense":
         return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
         break;  
@@ -32,19 +29,59 @@
 // TODO: Create a function to generate markdown for README
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let section;
-  switch(license) {
-    
-  }
+function renderLicenseSection(licenseInfo) {
+if ("MIT") {
+  return `
+  A short and simple permissive license with conditions only requiring 
+  preservation of copyright and license notices. Licensed works, 
+  modifications, and larger works may be distributed under different 
+  terms and without source code.`;
 }
+else if ("Apache") {
+  return `
+  A permissive license whose main conditions require preservation of 
+  copyright and license notices. Contributors provide an express grant 
+  of patent rights. Licensed works, modifications, and larger works may 
+  be distributed under different terms and without source code.
+  `;
+}
+else if ("GNUag3") {
+  return `
+  Permissions of this strongest copyleft license are conditioned on 
+  making available complete source code of licensed works and modifications, 
+  which include larger works using a licensed work, under the same 
+  license. Copyright and license notices must be preserved. 
+  Contributors provide an express grant of patent rights. When a 
+  modified version is used to provide a service over a network, the 
+  complete source code of the modified version must be made available.
+  `;
+}
+else if ("GNUgp3") {
+  return `
+  Permissions of this strong copyleft license are conditioned on making 
+  available complete source code of licensed works and modifications, 
+  which include larger works using a licensed work, under the same 
+  license. Copyright and license notices must be preserved. 
+  Contributors provide an express grant of patent rights.
+  `;
+}
+else if ("Unlicense") {
+  return `
+  A license with no conditions whatsoever which dedicates works to the 
+  public domain. Unlicensed works, modifications, and larger works may 
+  be distributed under different terms and without source code.
+  `;
+}
+  else () =>{
+  return ``;
+}
+  }
 
       function generateMarkdown(data) {
         return `
 # ${data.title}
 
 ${renderLicenseLink(data.license)}
-${renderLicenseSection(data.license)}
 
 ## Description
 
@@ -85,10 +122,11 @@ ${data.tests}
 
 Copyright (c) [${data.username}](https://github.com/${data.username}). All rights reserved.
 
-Licensed under the ${data.license} license.
+Licensed under the ${data.licenseInfo} license.
 
 `;
       }
+// ${renderLicenseSection(data.licenseInfo)}
 
 module.exports = generateMarkdown;
 //     }
