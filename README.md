@@ -58,5 +58,5 @@ So far, I have the `Pull Shark` and `Yolo` badges on GitHub.  Click to view them
 ## Features ✍
 
 - npm
-- node.js
+- Node.js
 - JavaScript
