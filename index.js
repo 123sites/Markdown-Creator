@@ -65,10 +65,9 @@ const questions = [
     message: "What is the license for your project?",
     choices: [
       "MIT",
+      "Apache",
       "GNU AGPL v3",
       "GNU GPL v3",
-      "GNU LGPL v3",
-      "Apache License 2.0",
       "Unlicense",
     ],
     name: "license",

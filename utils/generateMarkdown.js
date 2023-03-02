@@ -12,10 +12,10 @@ function renderLicenseLink(license) {
     case "Apache":
       return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
       break;
-    case "GNUag3":
+    case "GNU AGPL v3":
       return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
       break;
-    case "GNUgp3":
+    case "GNU GPL v3":
       return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
       break;
     case "Unlicense":
@@ -43,7 +43,7 @@ function renderLicenseSection(licenseInfo) {
       of patent rights. Licensed works, modifications, and larger works may 
       be distributed under different terms and without source code.`;
       break;
-    case "GNUag3":
+    case "GNU AGPL v3":
       return `  Permissions of this strongest copyleft license are conditioned on 
       making available complete source code of licensed works and modifications, 
       which include larger works using a licensed work, under the same 
@@ -52,7 +52,7 @@ function renderLicenseSection(licenseInfo) {
       modified version is used to provide a service over a network, the 
       complete source code of the modified version must be made available.`;
       break;
-    case "GNUgp3":
+    case "GNU GPL v3":
       return `  Permissions of this strong copyleft license are conditioned on making 
       available complete source code of licensed works and modifications, 
       which include larger works using a licensed work, under the same 
