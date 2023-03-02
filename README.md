@@ -7,8 +7,8 @@ This is a command-line application that helps a project creator to create a high
 ## Installation 🔑
 
 1.  Download or clone the repository,
-2.  Node.js is required to run this application,
-3.  npm will need to be installed as well.
+2.  ```Node.js``` is required to run this application,
+3.  ```npm``` will need to be installed as well.
 
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Markdown-Creator.git)
@@ -47,7 +47,7 @@ When I had trouble with this project, I first tried to problem-solve it myself. 
 
 ## License 📝
 
-The MIT license is in the GitHub repository.  
+The MIT license is in the GitHub repository.  Click to link to view it:
 [MIT License](https://github.com/123sites/Markdown-Creator/blob/main/LICENSE)
 
 ## Badges 🏆
