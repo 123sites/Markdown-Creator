@@ -5,7 +5,7 @@
 
 ## Description
 
-This writes a quality README.
+This is a quality README generator.
 
 ## Table of Contents
 
@@ -18,11 +18,11 @@ This writes a quality README.
 
 ## Installation
 
-None
+Add Node.js and npm
 
 ## Usage
 
-None
+none
 
 ## Contributing
 
@@ -30,13 +30,13 @@ none
 
 ## Tests
 
-None
+none
 
 ## Questions
 
 * Checkout my [GitHub profile](https://github.com/123sites)
   
-* Any additional questions or feed back, feel free to [send an email](mailto:cfreitas12345@gmail.com). 
+* Any additional questions or feedback, feel free to [send an email](mailto:cfreitas12345@gmail.com). 
 
 ## License
 
