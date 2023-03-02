@@ -35,11 +35,11 @@ The link to the Markdown-Creator is at:
 
 ## Video Demonstration 🎯
 
-[Click here to see the video](ht)
+[Click here to see the video](https://youtu.be/KA-Af4uWStI)
 
 ## Screenshot 🎯
 
-[Click here to see the screenshot](./a)
+[Click here to see the screenshot](./assets/images/README%20Screenshot.png)
 
 ## Credits 👈
 
