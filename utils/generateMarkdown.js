@@ -110,7 +110,7 @@ ${data.tests}
 
 * Checkout my [GitHub profile](https://github.com/${data.username})
   
-* Any additional questions or feed back, feel free to [send an email](mailto:${
+* Any additional questions or feedback, feel free to [send an email](mailto:${
     data.email
   }). 
 

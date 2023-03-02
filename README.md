@@ -7,8 +7,8 @@ This is a command-line application that helps a project creator to create a high
 ## Installation 🔑
 
 1.  Download or clone the repository,
-2.      ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) is required to run this application,
-3.      ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) to add the needed npm packages
+2.  Node.js is required to run this application,
+3.  npm will need to be installed as well.
 
 You can find the link to the repository at:
 [Repository link](https://github.com/123sites/Markdown-Creator.git)

@@ -1,11 +1,11 @@
 
-# dfgh
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-rtrty
+This writes a quality README.
 
 ## Table of Contents
 
@@ -18,25 +18,25 @@ rtrty
 
 ## Installation
 
-drrt
+None
 
 ## Usage
 
-szrt
+None
 
 ## Contributing
 
-rtyui
+none
 
 ## Tests
 
-ertyug
+None
 
 ## Questions
 
 * Checkout my [GitHub profile](https://github.com/123sites)
   
-* Any additional questions or feed back, feel free to [send an email](mailto:cfreitas12345@gmail.com ). 
+* Any additional questions or feed back, feel free to [send an email](mailto:cfreitas12345@gmail.com). 
 
 ## License
 
